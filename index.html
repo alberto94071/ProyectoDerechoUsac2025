@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Precálculo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        window.MathJax = {
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <section id="pantalla-inicio">
+            <img src="logo.png" alt="Logo" class="logo"> <h1>APRENDIENDO PRECALCULO CON UMG 🎓</h1>
+            <p>Aprende Precálculo de forma interactiva.</p>
+            
+            <div class="input-grupo">
+                <label for="nombreUsuario">Escribe el nombre que quieres que aparezca en tu diploma:</label>
+                <input type."text" id="nombreUsuario" placeholder="Tu nombre aquí...">
+            </div>
+            
+            <button id="btnComenzar">¡Comenzar Aventura!</button>
+        </section>
+
+        <section id="pantalla-menu" class="oculta">
+            <h2>Menú Principal</h2>
+            <p>Hola, <span id="saludoNombre"></span>. ¡Bienvenido!</p>
+            <p>Selecciona un módulo para empezar:</p>
+            
+            <div class="menu-opciones">
+                </div>
+        </section>
+        </section>
+
+            <section id="pantalla-teoria" class="oculta">
+            <button id="btnVolverMenu" class="btn-volver">← Volver al Menú</button>
+            <h2 id="teoriaTitulo"></h2>
+            <div id="teoriaContenido">
+                </div>
+            <button id="btnIrQuiz" class="btn-primario">¡Iniciar Quiz!</button>
+        </section>
+        <section id="pantalla-quiz" class="oculta">
+            <button id="btnVolverTeoria" class="btn-volver">← Volver a Teoría</button>
+            <h2 id="quizTitulo"></h2>
+    
+            <div id="quizContenedor">
+             </div>
+    
+            <button id="btnCalificarQuiz" class="btn-primario">Calificar Examen</button>
+    
+            <div id="quizResultados" class="oculta">
+                <h3>Resultados:</h3>
+                <p id="quizPuntaje"></p>
+                <button id="btnVolverMenuQuiz" class="btn-tema">Volver al Menú Principal</button>
+             </div>
+        </section>
+        <section id="pantalla-diploma" class="oculta">
+            <button id="btnVolverMenuDiploma" class="btn-volver">← Volver al Menú</button>
+    
+            <div class="diploma-contenedor">
+                <span class="diploma-sello">🏆</span>
+                <h1 class="diploma-titulo">DIPLOMA DE FINALIZACIÓN</h1>
+                <p class="diploma-otorgado-a">Otorgado a:</p>
+                <h2 class="diploma-nombre" id="diplomaNombre"></h2>
+                <p class="diploma-texto">
+                    Por haber completado exitosamente todos los módulos
+                    del curso de Precálculo y demostrar un dominio excepcional
+                    de los fundamentos matemáticos.
+                </p>
+                <p class="diploma-fecha" id="diplomaFecha"></p>
+                <p class="diploma-firma">ENCARGADO</p>
+            </div>
+
+        </section>
+        <section id="pantalla-equipo" class="oculta">
+            <button id="btnVolverMenuEquipo" class="btn-volver">← Volver al Menú</button>
+            <h2>Equipo de Desarrollo</h2>
+    
+            <div class="equipo-contenedor">
+                <div class="creador-card">
+                    <img src="yeye.jpeg" alt="Foto de Jeimy">
+                    <h3>Jeimy Vanesa Gómez López</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-16221</p>
+                    <p><strong>Cel:</strong> +(502) 48535550</p>
+                    <p><strong>Correo:</strong> gomezlopezjeimyvanesa@gmail.com</p>
+                </div>
+                <div class="creador-card">
+                    <img src="david.jpeg" alt="Foto de David">
+                    <h3>Ronal José David Morales Crisóstomo</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-17112</p>
+                    <p><strong>Cel:</strong> +(502) 30777833</p>
+                    <p><strong>Contacto:</strong> josedavidm844@gmail.com</p>
+                </div>
+                <div class="creador-card">
+                    <img src="cris.jpeg" alt="Foto de Cristian">
+                    <h3>Cristian Yahir Lopez Monterroso</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-19680</p>
+                    <p><strong>Cel:</strong> +(502) 36260967</p>
+                    <p><strong>Contacto:</strong> cristianyahir09@gmail.com</p>
+                </div>
+                <div class="creador-card">
+                    <img src="chino.jpeg" alt="Foto de Luis">
+                    <h3>Luis David Castañón fuentes</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-16323</p>
+                    <p><strong>Cel:</strong> +(502) 49416761</p>
+                    <p><strong>Contacto:</strong> luisfuen.887@gmail.com</p>
+                </div>
+                <div class="creador-card">
+                    <img src="joaquin.jpeg" alt="Foto de Joaquin">
+                    <h3>Joaquín Daniel Maldonado Velasquez</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-14491</p>
+                    <p><strong>Cel:</strong> +(502) 57803670</p>
+                    <p><strong>Contacto:</strong> danielmaldonado.02006@gmail.com</p>
+                </div>
+                <div class="creador-card">
+                    <img src="user.jpg" alt="Foto de Gilmar">
+                    <h3>Gilmar Danilo Barrios Armento</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-14414</p>
+                    <p><strong>Cel:</strong> +(502) 42848319</p>
+                    <p><strong>Contacto:</strong> xxxxx@gmail.com</p>
+                </div>
+                <div class="creador-card">
+                    <img src="marce.jpeg" alt="Foto de Marce">
+                    <h3>Ivana Marcela Malin de León</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 0903-25-18673</p>
+                    <p><strong>Cel:</strong> +(502) 37402511</p>
+                    <p><strong>Contacto:</strong> marcemalim@gmail.com</p>
+                </div>
+        
+                <div class="creador-card">
+                    <img src="rony.jpg" alt="Foto de Rony Méndez">
+                    <h3>Rony Alberto Méndez Fuentes</h3>
+                    <p><strong>Rol:</strong> Desarrollador</p>
+                    <p><strong>Carné UMG:</strong> 2903-25-29637</p>
+                    <p><strong>Cel:</strong> +(502) 50193207</p>
+                    <p><strong>Contacto:</strong> alberto.94071@gmail.com</p>
+                </div>
+
+                </div>
+        </section>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
