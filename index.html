@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Precálculo</title>
+    <title>Aprende Derecho | USAC</title>
     <link rel="stylesheet" href="estilos.css">
-    <script>
-        window.MathJax = {
-        tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-            }
-        };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+    </head>
 <body>
 
     <div class="app-container">
 
         <section id="pantalla-inicio">
-            <img src="logo.png" alt="Logo" class="logo"> <h1>APRENDIENDO DERECHO 🎓</h1>
-            <p>Refuerza algunas leyes de forma interactiva.</p>
+            <img src="logo.png" alt="Logo Derecho" class="logo"> 
+            <h1>APRENDIENDO DERECHO CON LA USAC 🎓</h1>
+            <p>Refuerza las leyes de forma interactiva.</p>
             
             <div class="input-grupo">
-                <label for="nombreUsuario">Escribe el nombre que quieres que aparezca en tu diploma:</label>
-                <input type."text" id="nombreUsuario" placeholder="Tu nombre aquí...">
+                <label for="nombreUsuario">Escribe el nombre para tu diploma:</label>
+                <input type="text" id="nombreUsuario" placeholder="Tu nombre aquí...">
             </div>
             
             <button id="btnComenzar">¡Comenzar Aventura!</button>
@@ -32,54 +25,54 @@
 
         <section id="pantalla-menu" class="oculta">
             <h2>Menú Principal</h2>
-            <p>Hola, <span id="saludoNombre"></span>. ¡Bienvenido!</p>
-            <p>Selecciona un módulo para empezar:</p>
+            <p>Hola, <span id="saludoNombre"></span>. ¡Bienvenido futuro abogado!</p>
+            <p>Selecciona un módulo:</p>
             
             <div class="menu-opciones">
                 </div>
         </section>
-        </section>
 
-            <section id="pantalla-teoria" class="oculta">
+        <section id="pantalla-teoria" class="oculta">
             <button id="btnVolverMenu" class="btn-volver">← Volver al Menú</button>
             <h2 id="teoriaTitulo"></h2>
             <div id="teoriaContenido">
                 </div>
             <button id="btnIrQuiz" class="btn-primario">¡Iniciar Quiz!</button>
         </section>
+
         <section id="pantalla-quiz" class="oculta">
             <button id="btnVolverTeoria" class="btn-volver">← Volver a Teoría</button>
             <h2 id="quizTitulo"></h2>
-    
             <div id="quizContenedor">
-             </div>
-    
+                </div>
+            
             <button id="btnCalificarQuiz" class="btn-primario">Calificar Examen</button>
-    
+            
             <div id="quizResultados" class="oculta">
                 <h3>Resultados:</h3>
                 <p id="quizPuntaje"></p>
                 <button id="btnVolverMenuQuiz" class="btn-tema">Volver al Menú Principal</button>
-             </div>
+            </div>
         </section>
+
         <section id="pantalla-diploma" class="oculta">
             <button id="btnVolverMenuDiploma" class="btn-volver">← Volver al Menú</button>
-    
+            
             <div class="diploma-contenedor">
-                <span class="diploma-sello">🏆</span>
-                <h1 class="diploma-titulo">DIPLOMA DE FINALIZACIÓN</h1>
+                <span class="diploma-sello">⚖️</span>
+                <h1 class="diploma-titulo">DIPLOMA DE MÉRITO</h1>
                 <p class="diploma-otorgado-a">Otorgado a:</p>
                 <h2 class="diploma-nombre" id="diplomaNombre"></h2>
                 <p class="diploma-texto">
                     Por haber completado exitosamente todos los módulos
-                    del curso de Derecho y demostrar un dominio excepcional
-                    de los fundamentos.
+                    de Introducción al Derecho y demostrar un dominio excepcional
+                    de los fundamentos jurídicos guatemaltecos.
                 </p>
                 <p class="diploma-fecha" id="diplomaFecha"></p>
-                <p class="diploma-firma">ENCARGADO</p>
+                <p class="diploma-firma">FACULTAD DE DERECHO</p>
             </div>
-
         </section>
+
         <section id="pantalla-equipo" class="oculta">
             <button id="btnVolverMenuEquipo" class="btn-volver">← Volver al Menú</button>
             <h2>Equipo de Desarrollo</h2>
@@ -90,7 +83,6 @@
                     <h3>Tania Vanessa Vásquez Morales</h3>
                     <p><strong>Rol:</strong> Desarrollador</p>
                     <p><strong>Carné USAC:</strong> 201946345</p>
-                    <p><strong>Cel:</strong> +(502) xxxxxxxx</p>
                     <p><strong>Correo:</strong> estudiante1@gmail.com</p>
                 </div>
                 <div class="creador-card">
@@ -106,7 +98,6 @@
                     <h3>Nazzary Jasmin Rubio Rodríguez</h3>
                     <p><strong>Rol:</strong> Desarrollador</p>
                     <p><strong>Carné USAC:</strong> 202141942</p>
-                    <p><strong>Cel:</strong> +(502) xxxxxxxx</p>
                     <p><strong>Correo:</strong> estudiante3@gmail.com</p>
                 </div>
                 <div class="creador-card">
@@ -114,14 +105,12 @@
                     <h3>Mariela Lisbeth Navarro Alvarado</h3>
                     <p><strong>Rol:</strong> Desarrollador</p>
                     <p><strong>Carné USAC:</strong> 202146575</p>
-                    <p><strong>Cel:</strong> +(502) xxxxxxxx</p>
                     <p><strong>Correo:</strong> estudiante4@gmail.com</p>
                 </div>
-                
-
-                </div>
+            </div>
         </section>
-        </div>
-        <script src="app.js"></script>
-    </body>
+
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
